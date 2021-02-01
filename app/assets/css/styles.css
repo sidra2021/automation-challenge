@@ -24,9 +24,21 @@ pre {
 }
 
 table {
-  background-color: #fff;
+  display: none;
+  border: #000080 3px solid;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: 5px;
+}
+
+form {
   display: none;
   border: #000080 2px solid;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 10px;
 }
 
 pre code {
@@ -38,6 +50,10 @@ canvas {
   background-color: #fff;
   border: 1px solid #ddd;
   cursor: pointer;
+}
+
+.question-element-container {
+  width: 50%;
 }
 
 .well {
@@ -357,6 +373,8 @@ code highlight styling
 th {
   text-align: start;
   padding: 1em 1em 1em 1em;
+  width: 20%;
+  height: 10%;
 }
 
 tr:nth-child(odd) {
@@ -365,4 +383,33 @@ tr:nth-child(odd) {
 
 tr:nth-child(even) {
   background-color: #FFF;
+}
+
+/*
+
+  form styles
+
+*/
+label {
+  margin-left: 10%;
+  width: 40%;
+  padding-top: 2%;
+}
+
+input {
+
+  width: 40%;
+}
+
+select {
+
+  width: 40%;
+}
+
+button#submit {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 10%;
+  width: 80%;
+  height: 10%;
 }

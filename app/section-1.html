@@ -70,85 +70,87 @@
           </div>
 
           <div class="col-xs-12">
-            <table id="alaya-table">
-              <tr class="table-header">
-                <th>ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>D.O.B</th>
-                <th>Role</th>
-              </tr>
-              <tr>
-                <th>1</th>
-                <th>John</th>
-                <th>Doe</th>
-                <th>1/1/1995</th>
-                <th>admin</th>
-              </tr>
-              <tr>
-                <th>2</th>
-                <th>Jane</th>
-                <th>Doe</th>
-                <th>1/17/1996</th>
-                <th>coordinator</th>
-              </tr>
-              <tr>
-                <th>3</th>
-                <th>John</th>
-                <th>Smith</th>
-                <th>5/5/1989</th>
-                <th>user</th>
-              </tr>
-              <tr>
-                <th>4</th>
-                <th>Tux</th>
-                <th>ThePenguin</th>
-                <th>8/2/1956</th>
-                <th>user</th>
-              </tr>
-              <tr>
-                <th>5</th>
-                <th>Alaya</th>
-                <th>Care</th>
-                <th>2/14/1978</th>
-                <th>user</th>
-              </tr>
-              <tr>
-                <th>6</th>
-                <th>Dennis</th>
-                <th>Ritchie</th>
-                <th>5/25/1952</th>
-                <th>coordinator</th>
-              </tr>
-              <tr>
-                <th>7</th>
-                <th>Example</th>
-                <th>LastName</th>
-                <th>9/29/1994</th>
-                <th>user</th>
-              </tr>
-              <tr>
-                <th>8</th>
-                <th>Caregiver</th>
-                <th>Mann</th>
-                <th>5/17/2001</th>
-                <th>user</th>
-              </tr>
-              <tr>
-                <th>9</th>
-                <th>Caregiver</th>
-                <th>Womann</th>
-                <th>4/21/1955</th>
-                <th>coordinator</th>
-              </tr>
-              <tr>
-                <th>10</th>
-                <th>DOM</th>
-                <th>Challenge</th>
-                <th>24/12/1981</th>
-                <th>user</th>
-              </tr>
-            </table>
+            <div class="question-element-container">
+              <table id="alaya-table">
+                <tr class="table-header">
+                  <th>ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>D.O.B</th>
+                  <th>Role</th>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <th>John</th>
+                  <th>Doe</th>
+                  <th>1/1/1995</th>
+                  <th>admin</th>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <th>Jane</th>
+                  <th>Doe</th>
+                  <th>1/17/1996</th>
+                  <th>coordinator</th>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <th>John</th>
+                  <th>Smith</th>
+                  <th>5/5/1989</th>
+                  <th>user</th>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <th>Tux</th>
+                  <th>ThePenguin</th>
+                  <th>8/2/1956</th>
+                  <th>user</th>
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <th>Alaya</th>
+                  <th>Care</th>
+                  <th>2/14/1978</th>
+                  <th>user</th>
+                </tr>
+                <tr>
+                  <th>6</th>
+                  <th>Dennis</th>
+                  <th>Ritchie</th>
+                  <th>5/25/1952</th>
+                  <th>coordinator</th>
+                </tr>
+                <tr>
+                  <th>7</th>
+                  <th>Example</th>
+                  <th>LastName</th>
+                  <th>9/29/1994</th>
+                  <th>user</th>
+                </tr>
+                <tr>
+                  <th>8</th>
+                  <th>Caregiver</th>
+                  <th>Mann</th>
+                  <th>5/17/2001</th>
+                  <th>user</th>
+                </tr>
+                <tr>
+                  <th>9</th>
+                  <th>Caregiver</th>
+                  <th>Womann</th>
+                  <th>4/21/1955</th>
+                  <th>coordinator</th>
+                </tr>
+                <tr>
+                  <th>10</th>
+                  <th>DOM</th>
+                  <th>Challenge</th>
+                  <th>24/12/1981</th>
+                  <th>user</th>
+                </tr>
+              </table>
+            </div>
           </div>
 
           <div class="col-xs-12">
@@ -157,14 +159,39 @@
             <div class="well" style="margin-top: 0; margin-bottom: 10px;">
               <p><strong>Section steps:</strong></p>
               <ol>
-                <li>Steps...</li>
+                <li>Assert that the form is not visible</li>
+                <li>After clicking the "Show form" button, assert that the form is visible</li>
+                <li>Fill in the "Name" and "Age" inputs, and assert that both inputs are filled</li>
+                <li>Select "Female" from the select option, and assert that the value is "female"</li>
+                <li>Tick the "Nurse" checkbox and assert that the value "nurse" is true</li>
+                <li>Click on the "Submit" button and assert that there is an alert window showing</li>
+                <li>With that same alert window, assert that the text displayed is "Form submitted!"</li>
               </ol>
             </div>
-            <button id="form-toggle-button" data-test="form-toggle-button" class="form-toggle-button">Show Form</button>
+            <button id="form-toggle-button" data-test="form-toggle-button" class="form-toggle-button" onclick="showForm()">Show Form</button>
           </div>
 
           <div class="col-xs-12">
-            <hr>
+            <div class="question-element-container">
+              <form id="alaya-form">
+                <label for="fullName">Name</label>
+                <input type="text" id="fullName" name="fullName"/><br>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age"/><br>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                  <option value="">-- Select your Gender --</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="nbin">Non-binary</option>
+                  <option value="other">Other</option>
+                  <option value="prefns">Prefer not to say</option>
+                </select>
+                <label for="nurse">Nurse?</label>
+                <input type="checkbox" id="nurse" name="nurse" /><br>
+                <button id="submit">Submit</button>
+              </form>
+            </div>
           </div>
 
         </div>
