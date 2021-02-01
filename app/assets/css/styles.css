@@ -25,6 +25,8 @@ pre {
 
 table {
   background-color: #fff;
+  display: none;
+  border: #000080 2px solid;
 }
 
 pre code {
@@ -334,4 +336,33 @@ code highlight styling
 
 .hljs-strong {
   font-weight: normal;
+}
+
+/* 
+
+  table styles
+
+*/
+
+.table-header {
+  background-color: palegreen;
+}
+
+.table-header > th {
+  font-size: 1.25em;
+  background-color: #000080;
+  color: white;
+}
+
+th {
+  text-align: start;
+  padding: 1em 1em 1em 1em;
+}
+
+tr:nth-child(odd) {
+  background-color: #cccccc;
+}
+
+tr:nth-child(even) {
+  background-color: #FFF;
 }
