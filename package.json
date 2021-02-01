@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Alayacare's interview project for QA automation.",
   "scripts": {
-    "start:section-2": "json-server --delay 10000 --port 8889 app/assets/js/section-2/todos.json",
+    "start:section-2": "node app/assets/js/section-2/server.js",
     "start": "serve --listen ${PORT:-8080}",
     "dev": "npm start",
     "lint": "npx eslint app/**/*.js",
@@ -25,6 +25,7 @@
   "homepage": "git@github.com:AlayaCare/cypress-interview-handbook.git#readme",
   "dependencies": {
     "json-server": "0.16.3",
+    "nocache": "2.1.0",
     "serve": "11.3.0"
   },
   "devDependencies": {

@@ -3,7 +3,7 @@ $(() => {
 
   const getTodo = () => {
     $.ajax({
-      url: `${root}/todos/1`,
+      url: `${root}/todos`,
       method: 'GET',
     }).then((data) => {
       alert(data.title)
