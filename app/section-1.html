@@ -59,7 +59,7 @@
                 <li>Assert that the table is not visible</li>
                 <li>After clicking the "Show table" button, assert the table is visible</li>
                 <li>Assert that the table is 5 columns wide</li>
-                <li>Assert that the table is 10 rows long</li>
+                <li>Assert that the table is 10 rows long, excluding the first (header) row</li>
                 <li>Assert that an admin has the ID of 1</li>
                 <li>Assert that <strong>at least 5</strong> entries have the role "user"</li>
                 <li>Assert there are <strong>exactly 3 people</strong> older than 60 years old</li>
@@ -72,8 +72,8 @@
 
           <div class="col-xs-12">
             <div class="question-element-container">
-              <table id="alaya-table">
-                <tr class="table-header">
+              <table id="alaya-table" data-test="user-table">
+                <tr class="table-header" data-test="table-header">
                   <th>ID</th>
                   <th>First Name</th>
                   <th>Last Name</th>
@@ -147,7 +147,7 @@
                   <th>10</th>
                   <th>DOM</th>
                   <th>Challenge</th>
-                  <th>24/12/1981</th>
+                  <th>12/24/1981</th>
                   <th>user</th>
                 </tr>
               </table>
@@ -166,8 +166,7 @@
                 <li>Fill in the "Name" and "Age" inputs, and assert that both inputs are filled</li>
                 <li>Select "Female" from the select option, and assert that the value is "female"</li>
                 <li>Tick the "Nurse" checkbox and assert that the value "nurse" is true</li>
-                <li>Click on the "Submit" button and assert that there is an alert window showing</li>
-                <li>With that same alert window, assert that the text displayed is "Form submitted!"</li>
+                <li>Click on the "Submit" button and assert that there is an alert window showing with the text "<strong>Form submitted!</strong>"</li>
               </ol>
             </div>
             <button id="form-toggle-button" data-test="form-toggle-button" class="form-toggle-button" onclick="showForm()">Show Form</button>
@@ -175,13 +174,13 @@
 
           <div class="col-xs-12">
             <div class="question-element-container">
-              <form id="alaya-form">
+              <form id="alaya-form" data-test="signup-form">
                 <label for="fullName">Name</label>
-                <input type="text" id="fullName" name="fullName"/><br>
+                <input type="text" id="fullName" name="fullName" data-test="full-name-input"/><br>
                 <label for="age">Age</label>
-                <input type="number" id="age" name="age"/><br>
+                <input type="number" id="age" name="age" data-test="age-input"/><br>
                 <label for="gender">Gender</label>
-                <select id="gender" name="gender">
+                <select id="gender" name="gender" data-test="gender-select">
                   <option value="">-- Select your Gender --</option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
@@ -190,8 +189,8 @@
                   <option value="prefns">Prefer not to say</option>
                 </select>
                 <label for="nurse">Nurse?</label>
-                <input type="checkbox" id="nurse" name="nurse" /><br>
-                <button id="submit">Submit</button>
+                <input type="checkbox" id="nurse" name="nurse" data-test="nurse-input"/><br>
+                <button id="submit" data-test="submit-btn">Submit</button>
               </form>
             </div>
           </div>
