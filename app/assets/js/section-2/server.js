@@ -5,16 +5,14 @@ const server = jsonServer.create()
 server.use(jsonServer.defaults())
 server.use(nocache())
 
-server.get('/todos', (req, res) => {
+server.get('/todos/1', (req, res) => {
   setTimeout(() => {
-    res.jsonp({
-      todos: [
-        {
-          'id': 1,
-          'title': 'Abnormally long network call!',
-        },
-      ],
-    })
+    res.jsonp(
+      {
+        'id': 1,
+        'title': 'Abnormally long network call!',
+      },
+    )
   }, 10000)
 })
 
