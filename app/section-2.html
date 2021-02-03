@@ -111,8 +111,8 @@
                 <li>BONUS: Assert the details of the file downloaded</li>
               </ol>
             </div>
-            <a href="/assets/img/javascript-logo.png" download=""><button id="file-download-button"
-                data-test="file-download-button" class="file-download-button">Click me!</button></a>
+            <a href="/assets/img/javascript-logo.png" download="true" id="file-download-button"
+              data-test="file-download-button" class="file-download-button"><button>Click me!</button></a>
           </div>
 
           <div class="col-xs-12">
@@ -122,6 +122,13 @@
       </div>
     </div>
 
+    <script>
+      document.getElementById('file-download-button').onclick = function (event) {
+        if (window.Cypress) {
+          event.preventDefault();
+        }
+      };
+    </script>
     <script src="/assets/js/vendor/jquery-1.12.0.min.js"></script>
     <script src="/assets/js/vendor/bootstrap.min.js"></script>
     <script src="/assets/js/vendor/highlight.pack.js"></script>

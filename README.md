@@ -11,7 +11,7 @@ you to common situations we are currently facing at work.
 Submit answers that YOU think are the most relevant, there is NO right or wrong answers!
 
 ## What's next?
-Follow these steps to get a local version of this project running locally:
+Follow these steps to get a local version of this project:
 ```bash
 # Clone the project in /cypress-interview-handbook
 git clone https://github.com/AlayaCare/cypress-interview-handbook
@@ -26,6 +26,14 @@ npm run start
 # In another terminal, to start Cypress
 npm run cy:open
 
-# Specific to the second problem:
-npm run start:problem-2
+# Specific to the second section:
+npm run start:section-2
 ```
+
+## To submit your solution
+Discard the `node_modules` folder, zip the folder and send it to your interviewer.
+
+## Sample criteria you will be judged on
+- Overall structure of the presented code
+- Proper usage of page objects
+- Testing problems are green and asserting the right scenarios
