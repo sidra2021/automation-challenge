@@ -18,7 +18,7 @@ git clone https://github.com/AlayaCare/cypress-interview-handbook
 
 # Install dependencies
 cd cypress-interview-handbook
-npm i
+npm ci
 
 # Start the webapp
 npm run start
@@ -26,7 +26,7 @@ npm run start
 # In another terminal, to start Cypress
 npm run cy:open
 
-# Specific to the second section:
+# In another terminal, specific to the second section:
 npm run start:section-2
 ```
 
