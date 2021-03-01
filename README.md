@@ -31,7 +31,7 @@ npm run start:section-2
 ```
 
 ## To submit your solution
-Discard the `node_modules` folder, zip the project and send it to your interviewer.
+Create a fork of this repo and send the link to your interviewer. 
 
 ## Sample criteria you will be judged on
 - Overall structure of the presented code
