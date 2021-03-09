@@ -20,8 +20,11 @@ git clone https://github.com/AlayaCare/cypress-interview-handbook
 cd cypress-interview-handbook
 npm ci
 
-# Start the webapp
+# Start the webapp (macOS/Linux)
 npm run start
+
+# Start the webapp (Windows)
+npm run start:windows
 
 # In another terminal, to start Cypress
 npm run cy:open
