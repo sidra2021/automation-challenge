@@ -1,5 +1,5 @@
 
-<h1 align="center">AlayaCare Cypress - QA Automation Challenge 🚀</h1>
+<h1 align="center">AlayaCare Cypress - Automation Challenge 🚀</h1>
 
 
 ## What is this?
