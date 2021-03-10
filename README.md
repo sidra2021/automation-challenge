@@ -13,11 +13,11 @@ Submit answers that YOU think are the most relevant, there is NO right or wrong 
 ## What's next?
 Follow these steps to get a local version of this project:
 ```bash
-# Clone the project in /cypress-interview-handbook
-git clone https://github.com/AlayaCare/cypress-interview-handbook
+# Clone the project in /automation-challenge
+git clone https://github.com/AlayaCare/automation-challenge
 
 # Install dependencies
-cd cypress-interview-handbook
+cd automation-challenge
 npm ci
 
 # Start the webapp (macOS/Linux)
