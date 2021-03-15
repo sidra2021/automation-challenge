@@ -1,4 +1,4 @@
-const Seection1 = {
+const Section1 = {
   /**
    * A literal is considered static, stable strings (eg. titles, form labels, ...)
    */
@@ -28,7 +28,7 @@ const Seection1 = {
       cy.server()
       cy.wait('/endpoint').as('endpoint')
 
-      cy.get(Seection1.elements.sampleElement).click()
+      cy.get(Section1.elements.sampleElement).click()
       // ... An api call to "/endpoint" performed on the app.
       cy.wait('@endpoint').should((request) => {
         expect(request.status).to.eq(200)
@@ -37,4 +37,4 @@ const Seection1 = {
   },
 }
 
-module.exports = { Seection1 }
+module.exports = { Section1 }

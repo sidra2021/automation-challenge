@@ -36,7 +36,9 @@ npm run start:section-2
 ## To submit your solution
 Create a fork of this repo and send the link to your interviewer. 
 
-## Sample criteria you will be judged on
+## Criteria you will be judged on:
+- **Completion of Section 1**
+- **Optional completion of Section 2**
 - Overall structure of the presented code
 - Proper usage of page objects
 - Testing problems are green and asserting the right scenarios
