@@ -1,12 +1,14 @@
-const showTable = () => {
-    document.getElementById('alaya-table').style.display = "block";
-}
+$(() => {
+  $('#table-toggle-button').on('click', () => {
+    $('#alaya-table').toggle()
+  })
 
-const showForm = () => {
-    document.getElementById('alaya-form').style.display = "block";
-}
+  $('#form-toggle-button').on('click', () => {
+    $('#alaya-form').toggle()
+  })
 
-document.getElementById('submit').addEventListener("click", (event) => {
-    event.preventDefault();
-    alert("Form submitted!");
+  document.getElementById('submit').addEventListener('click', (event) => {
+    event.preventDefault()
+    alert('Form submitted!')
+  })
 })

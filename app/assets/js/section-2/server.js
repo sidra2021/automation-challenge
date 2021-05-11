@@ -16,6 +16,7 @@ server.get('/todos/1', (req, res) => {
   }, 10000)
 })
 
+// eslint-disable-next-line no-console
 console.log(`
 ┌──────────────────────────────────────────────────┐
 │                                                  │
