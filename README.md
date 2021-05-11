@@ -31,6 +31,10 @@ npm run cy:open
 
 # In another terminal, specific to the second section:
 npm run start:section-2
+
+# Once done, don't forget to lint the project (& fix any formatting issues, if any)
+npm run lint
+npm run lint -- --fix 
 ```
 
 ## To submit your solution
