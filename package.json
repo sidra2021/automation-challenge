@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Alayacare's interview project for QA automation.",
   "scripts": {
+    "cy:run": "cypress run",
     "start:section-2": "node app/assets/js/section-2/server.js",
     "start": "serve --listen ${PORT:-8080}",
     "start:windows": "serve --listen 8080",
